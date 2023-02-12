@@ -1,12 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+     <link rel="stylesheet" href="./style.css" />
+    <title>Пошуковець унікальних літер</title>
 </head>
+<header>
+  <div class="container">
+  <h1 class="title">Пошуковець унікальних літер &#129299;</h1>
+  </div>
+</header>
+<main>
+  <section class="textarea">
+    <div class="container">
+        <form class="form-text">
+      <label class="form-text__lable">
+        <textarea class="form-text__textarea" type="text" name="message" placeholder="Вставте свій текст....."></textarea>
+      </label>
+      <button class="form-text__button">Аналізувати</button>
+      <button class="form-text__reset">Очистити</button>
+    </form>
+    </div>
+  </section>
+  <section class="array">
+    <div class="container">
+    <h2 class="array_text">Пошуковець знаходить в кожному слові цього тексту найперший символ, який більше НЕ повторюється в аналізуємому слові</h2>
+    <form class="array">
+      <label class="array__lable">
+        <input class="array__input" type="text" name="text" placeholder="Отримайте перелік початкових літер.....">
+      </label>
+    </div>
+  </section>
+  <section class="letter">
+    <div class="container">
+    <h2 class="letter__text">Пошуковець із перших літер слів, що знаходяться у вашому тексті вибере першу унікальну літеру, тобто ту, з якої починається слово у вашому тексті лише один раз.
+    </h2>
+    <form>
+      <label class="letter__lable">
+        <input class="letter__input" type="text" name="text" placeholder="Отримайте унікальну літеру.....">
+      </label>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+       <ul class="footer__list">
+        <li class="footer__item"><p class="footer__date"><span lang="en">created by Ekaterina Kononenko</span></p></li>
+          <li class="footer__item">
+            <a target="_blank" href="https://github.com/EkaterinaKononenko">
+              <img src="./github.svg" alt="github-logo" width="20">
+            </a>
+          </li>
+          <li class="footer__item"><p>&#169;2023</p></li>
+        </ul>
+    </div>
+  </footer>
+</main>
 <body>
-    
+  <script src="./index.js" type="module"></script>  
 </body>
 </html>
